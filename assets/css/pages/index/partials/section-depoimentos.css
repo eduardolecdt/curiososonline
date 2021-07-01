@@ -1,0 +1,169 @@
+/*
+
+INDEX > SECTION.depoimentos
+
+*/
+
+section.depoimentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  padding: 0 0 110px 0;
+}
+
+section.depoimentos img.blush {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+section.depoimentos .titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 80px 50px 80px;
+}
+
+section.depoimentos .titulo h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: var(--cor-branco);
+}
+
+section.depoimentos .titulo h2 span {
+  color: var(--cor-principal);
+}
+
+section.depoimentos .titulo .setas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+section.depoimentos .titulo .setas button {
+  background-color: transparent;
+  transition: all 0.3s;
+}
+
+section.depoimentos .titulo .setas button:hover {
+  transform: scale(1.1);
+}
+
+section.depoimentos .titulo .setas button img {
+  pointer-events: none;
+}
+
+section.depoimentos .titulo .setas button.voltar img {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+}
+
+section.depoimentos .titulo .setas button.avancar img {
+  width: 80px;
+  height: 80px;
+  min-width: 80px;
+  min-height: 80px;
+}
+
+section.depoimentos .titulo .setas button.avancar {
+  margin: 0 0 0 50px;
+}
+
+section.depoimentos .slide {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;  
+  width: 100%;
+  overflow: hidden;
+}
+
+section.depoimentos .slide .itens {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+section.depoimentos .slide .itens .item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#2A2A2A),color-stop(80%,#0B0B0B));
+  background-image: linear-gradient(180deg,#2A2A2A,#0B0B0B 80%);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 0 30px 0 0;
+  width: 350px;
+  min-width: 350px;
+  max-width: 350px;
+  position: relative;
+}
+
+section.depoimentos .slide .itens .item.primeiro {
+  margin: 0 30px 0 80px;
+}
+
+section.depoimentos .slide .itens .item.ultimo {
+  margin: 0 80px 0 0;
+}
+
+section.depoimentos .slide .itens .item img {
+  width: 80px;
+  height: 80px;
+  min-width: 80px;
+  min-height: 80px;
+  border-radius: 50%;
+  background-color: var(--cor-principal);
+  position: absolute;
+  top: 30px;
+  left: -15px;
+}
+
+section.depoimentos .slide .itens .item p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 5vw, 1.2rem);
+  color: var(--cor-cinza-3);
+  line-height: 1.5;
+  padding: 40px 0 10px 0;
+}
+
+section.depoimentos .slide .itens .item .aluno {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px 0 0 60px;
+}
+
+section.depoimentos .slide .itens .item .aluno h3 {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1.1rem, 5vw, 1.3rem);
+  color: var(--cor-branco);
+}
+
+section.depoimentos .slide .itens .item .aluno h4 {
+  font-family: var(--fonte-regular);
+  font-size: clamp(0.9rem, 5vw, 1.1rem);
+  color: var(--cor-cinza-3);
+  padding: 5px 0 0 0;
+}
+
+/*
+
+Responsivo
+
+*/
+
+@media screen and (max-width: 1000px) {
+}

@@ -1,0 +1,19 @@
+/*
+
+INDEX
+
+*/
+
+@import '../../global/global.css';
+
+/* Partials */
+
+@import './partials/header.css';
+@import './partials/footer.css';
+
+@import './partials/section-beneficios.css';
+@import './partials/section-comprar.css';
+@import './partials/section-depoimentos.css';
+@import './partials/section-frase.css';
+@import './partials/section-sobre.css';
+@import './partials/section-tecnologia.css';

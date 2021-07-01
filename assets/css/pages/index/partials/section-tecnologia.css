@@ -1,0 +1,64 @@
+/*
+
+INDEX > SECTION.tecnologia
+
+*/
+
+section.tecnologia {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#2A2A2A),color-stop(80%,#0B0B0B));
+  background-image: linear-gradient(180deg,#2A2A2A,#0B0B0B 80%);
+  padding: 20px 80px 50px 80px;
+  position: relative;
+}
+
+section.tecnologia .faixa {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#2A2A2A),color-stop(80%,#0B0B0B));
+  background-image: linear-gradient(180deg,#2A2A2A,#0B0B0B 80%);
+}
+
+section.tecnologia .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 30%;
+}
+
+section.tecnologia .item.centro {
+  margin: 0 80px;
+}
+
+section.tecnologia .item p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 5vw, 1.2rem);
+  color: var(--cor-cinza-3);
+  line-height: 1.5;
+  padding: 20px 0 0 0;
+}
+
+section.tecnologia .item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--cor-principal);
+  z-index: 2;
+}
+
+/*
+
+Responsivo
+
+*/
+
+@media screen and (max-width: 1000px) {
+}

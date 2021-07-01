@@ -1,0 +1,148 @@
+/*
+
+INDEX > SECTION.beneficios
+
+*/
+
+section.beneficios {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  background-image: url('https://files.tadalapill.com/index/blush-direita.png');
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  justify-content: center;
+  position: relative;
+}
+
+section.beneficios .parte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section.beneficios .parte.esquerda {
+  padding: 80px 40px 0 80px;
+  width: 45%;
+  position: relative;
+}
+
+section.beneficios .parte.direita {
+  padding: 0 0 0 40px;
+  width: 55%;
+}
+
+section.beneficios .parte .quadro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 50px;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#2A2A2A),color-stop(80%,#0B0B0B));
+  background-image: linear-gradient(180deg,#2A2A2A,#0B0B0B 80%);
+}
+
+section.beneficios img.vasos {
+  position: absolute;
+  bottom: -50%;
+  right: 0;
+  width: 70%;
+}
+
+/* Quadro Esquerda */
+
+section.beneficios .parte.esquerda .quadro {
+  border-radius: 30px 30px 0 0;
+  width: 100%;
+}
+
+section.beneficios .parte.esquerda .quadro p {
+  position: relative;
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 5vw, 1.2rem);
+  color: var(--cor-cinza-3);
+  line-height: 1.5;
+  padding: 0 0 30px 0;
+}
+
+section.beneficios .parte.esquerda .quadro p span {
+  width: 10px;
+  height: 10px;
+  min-width: 10px;
+  min-height: 10px;
+  border-radius: 50%;
+  background-color: var(--cor-principal);
+  position: absolute;
+  top: -10px;
+  left: -20px;
+}
+
+section.beneficios .parte.esquerda .quadro p.ultimo {
+  padding: 0 0 350px 0;
+}
+
+section.beneficios .parte.esquerda img.foto {
+  width: 120%;
+  position: absolute;
+  top: 55%;
+  left: -40px;
+}
+
+/* Quadro Direita */
+
+section.beneficios .parte.direita .quadro {
+  border-radius: 30px 0 0 30px;
+  width: 100%;
+}
+
+section.beneficios .parte.direita .quadro h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(3rem, 5vw, 6rem);
+  color: var(--cor-branco);
+  line-height: 1;
+  width: 100%;
+  max-width: 500px;
+}
+
+section.beneficios .parte.direita .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  padding: 120px 80px 120px 0;
+}
+
+section.beneficios .parte.direita .titulo h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: var(--cor-branco);
+  width: 100%;
+  max-width: 450px;
+}
+
+section.beneficios .parte.direita .titulo h2 span {
+  color: var(--cor-principal);
+}
+
+section.beneficios .parte.direita .titulo p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 5vw, 1.2rem);
+  color: var(--cor-cinza-3);
+  line-height: 1.5;
+  padding: 10px 0 0 0;
+  width: 100%;
+  max-width: 550px;
+}
+
+/*
+
+Responsivo
+
+*/
+
+@media screen and (max-width: 1000px) {
+}

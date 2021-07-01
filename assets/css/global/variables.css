@@ -1,0 +1,30 @@
+/*
+
+VARIABLES
+
+*/
+
+:root {
+
+  /* Cores */
+
+  --cor-branco: #FFFFFF;
+  --cor-preto: #000000;
+
+  --cor-cinza: #141518;
+  
+  --cor-verde-claro: #00ff6d;
+  --cor-verde: #00bf8c;
+
+  --cor-principal: #4500FF;
+  
+  --cor-cinza-1: #2A2A2A;
+  --cor-cinza-2: #0B0B0B;
+  --cor-cinza-3: #A2A2A2;
+
+  /* Fontes */
+
+  --fonte-estilo: 'badGrunge';
+  --fonte-regular: 'gtWalsheimRegular';
+
+}
