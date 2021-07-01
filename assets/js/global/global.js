@@ -31,7 +31,7 @@
 
   function habilitarCliqueRolarAteSeletor () {
     window.addEventListener('click', (evento) => { 
-      const seletor = evento.target.getAttribute('data-scroll-seletor')
+      const seletor = evento.target.getAttribute('data-scroll')
       if (!seletor) return
   
       rolarAteSeletor(seletor)
@@ -74,7 +74,7 @@
     window.addEventListener('click', (evento) => {
       if (evento.target.nodeName !== 'BUTTON') return
 
-      const url = evento.target.getAttribute('data-url-externa')
+      const url = evento.target.getAttribute('data-url')
       if (!url) return
 
       paraPaginaExterna(url)
@@ -85,7 +85,7 @@
     window.addEventListener('click', (evento) => {
       if (evento.target.nodeName !== 'BUTTON') return
 
-      const url = evento.target.getAttribute('data-url-interna')
+      const url = evento.target.getAttribute('data-pagina')
       if (!url) return
 
       paraPaginaInterna(url)

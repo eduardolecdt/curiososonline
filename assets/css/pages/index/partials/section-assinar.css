@@ -1,6 +1,6 @@
-/* index <header> */
+/* index <section class="assinar"> */
 
-header {
+section.assinar {
   display: flex;
 }
 
