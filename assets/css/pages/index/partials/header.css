@@ -2,6 +2,80 @@
 
 header {
   display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+/* Texto */
+
+header img.fumaca {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Texto */
+
+header .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  z-index: 2;
+  padding: 80px 80px 80px 0;
+  min-height: 100vh;
+}
+
+header .texto img {
+  width: 100%;
+  max-width: 500px;
+}
+
+header .texto p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1.2rem, 5vw, 1.4rem);
+  line-height: 1.5;
+  color: var(--cor-branco);
+  width: 100%;
+  max-width: 550px;
+  padding: 30px 0;
+}
+
+header .texto button {
+  font-family: var(--fonte-estilo);
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1;
+  color: var(--cor-ciano);
+  border: 3px solid var(--cor-ciano);
+  padding: 5px 25px;
+  border-radius: 20px;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+
+header .texto button:hover {
+  color: var(--cor-branco);
+  border: 3px solid var(--cor-branco);
+}
+
+/* Texto */
+
+header .imagem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 50%;
+  padding: 80px 80px 0 80px;
+}
+
+header .imagem img {
+  width: 100%;
+  z-index: 2;
 }
 
 /* Responsivo */

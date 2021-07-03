@@ -2,6 +2,131 @@
 
 section.diferenciais {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--cor-branco);
+  background-image: url('https://files.lecdt.com/curiososonline/images/background-pattern-branco.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-y;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Circulos */
+
+section.diferenciais img.circulo {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  min-width: 700px;
+  min-height: 700px;
+  border-radius: 50%;
+  z-index: 1;
+  animation: moverCirculo 10s linear infinite;
+}
+
+section.diferenciais img.circulo.um {
+  top: 15%;
+  right: -10%;
+}
+
+section.diferenciais img.circulo.dois {
+  top: 45%;
+  left: -10%;
+}
+
+section.diferenciais img.circulo.tres {
+  bottom: -10%;
+  right: 25%;
+}
+
+@keyframes moverCirculo {
+  0% {
+    transform: translate(0) rotate(0deg);
+  }
+  50% {
+    transform: translate(200px) rotate(180deg);
+  }
+  100% {
+    transform: translate(0) rotate(360deg);
+  }
+}
+
+/* Parte */
+
+section.diferenciais .parte {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 2;
+}
+
+section.diferenciais .parte .imagem {
+  display: flex;
+  width: 50%;
+  height: 90vh;
+  backdrop-filter: blur(30px);
+  background-color: var(--cor-cinza-transparente);
+}
+
+section.diferenciais .parte .imagem img {
+  width: 100%;
+  max-width: 800px;
+}
+
+section.diferenciais .parte.um .imagem {
+  align-items: flex-end;
+  justify-content: flex-start;
+  border-radius: 0 0 0 30px;
+}
+
+section.diferenciais .parte.um .imagem img {
+  border-radius: 0 0 0 30px;
+}
+
+section.diferenciais .parte.dois .imagem {
+  align-items: flex-end;
+  justify-content: flex-end;
+  border-radius: 0 30px 30px 0;
+  margin: 50px 0;
+}
+
+section.diferenciais .parte.dois .imagem img {
+  border-radius: 0 0 30px 0;
+}
+
+section.diferenciais .parte.tres .imagem {
+  align-items: flex-end;
+  justify-content: flex-start;
+  border-radius: 30px 0 0 0;
+}
+
+section.diferenciais .parte .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 80px;
+  width: 50%;
+}
+
+section.diferenciais .parte .texto img {
+  width: 100%;
+  max-width: 500px;
+}
+
+section.diferenciais .parte .texto p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1.2rem, 5vw, 1.4rem);
+  line-height: 1.5;
+  color: var(--cor-cinza);
+  width: 100%;
+  max-width: 550px;
+  padding: 30px 0 0 0;
 }
 
 /* Responsivo */

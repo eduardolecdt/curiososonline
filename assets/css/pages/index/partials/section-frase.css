@@ -2,6 +2,81 @@
 
 section.frase {
   display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+/* Texto */
+
+section.frase img.fumaca {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: rotate(180deg);
+}
+
+/* Texto */
+
+section.frase .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  z-index: 2;
+  padding: 80px;
+  min-height: 100vh;
+}
+
+section.frase .texto img {
+  width: 100%;
+  max-width: 700px;
+}
+
+section.frase .texto p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1.2rem, 5vw, 1.4rem);
+  line-height: 1.5;
+  color: var(--cor-branco);
+  width: 100%;
+  padding: 30px 0;
+}
+
+section.frase .texto button {
+  font-family: var(--fonte-estilo);
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1;
+  color: var(--cor-ciano);
+  border: 3px solid var(--cor-ciano);
+  padding: 5px 25px;
+  border-radius: 20px;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+
+section.frase .texto button:hover {
+  color: var(--cor-branco);
+  border: 3px solid var(--cor-branco);
+}
+
+/* Texto */
+
+section.frase .imagem {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 50%;
+  padding: 80px 0 0 0;
+}
+
+section.frase .imagem img {
+  width: 100%;
+  max-width: 700px;
+  z-index: 2;
 }
 
 /* Responsivo */

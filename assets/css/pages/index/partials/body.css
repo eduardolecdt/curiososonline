@@ -1,0 +1,13 @@
+/* index <body> */
+
+body {
+  background-image: url('https://files.lecdt.com/curiososonline/images/background-pattern.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-y;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+}

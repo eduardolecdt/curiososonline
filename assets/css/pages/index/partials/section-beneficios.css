@@ -2,6 +2,105 @@
 
 section.beneficios {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+/* Fumaça */
+
+section.beneficios img.fumaca {
+  position: absolute;
+  width: 100%;
+  max-width: 500px;
+}
+
+section.beneficios img.fumaca.direita {
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+section.beneficios img.fumaca.esquerda {
+  left: 0;
+  top: 40%;
+  transform: translate(0, -50%);
+}
+
+/* Fumaça */
+
+section.beneficios img.icone {
+  position: absolute;
+}
+
+section.beneficios img.icone.um {
+  width: 100%;
+  max-width: 150px;
+  top: 10%;
+  right: 10%;
+}
+
+section.beneficios img.icone.dois {
+  width: 100%;
+  max-width: 150px;
+  top: 40%;
+  left: 10%;
+}
+
+section.beneficios img.icone.tres {
+  width: 100%;
+  max-width: 150px;
+  bottom: 10%;
+  right: 15%;
+}
+
+/* Partes */
+
+section.beneficios .partes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1300px;
+  padding: 140px 80px;
+}
+
+section.beneficios .partes .parte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding: 40px 0;
+}
+
+section.beneficios .partes .parte.direita {
+  text-align: left;
+  align-items: flex-start;
+  margin-left: auto;
+}
+
+section.beneficios .partes .parte.esquerda {
+  text-align: right;
+  align-items: flex-end;
+  margin-right: auto;
+}
+
+section.beneficios .partes .parte h2 {
+  font-family: var(--fonte-estilo);
+  font-size: clamp(5rem, 5vw, 8rem);
+  line-height: 1;
+  color: var(--cor-branco);
+}
+
+section.beneficios .partes .parte p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1.2rem, 5vw, 1.4rem);
+  line-height: 1.5;
+  color: var(--cor-branco);
+  width: 100%;
+  max-width: 550px;
 }
 
 /* Responsivo */
