@@ -1,0 +1,94 @@
+/* index <div class="loading"> */
+
+div.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-cinza);
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transition: all 0.3s;
+  cursor: progress;
+}
+
+div.loading.ocultar {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+div.loading img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  max-width: 200px;
+  min-width: 200px;
+  height: 200px;
+  max-width: 200px;
+  min-height: 200px;
+  z-index: 102;
+}
+
+div.loading div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  min-width: 180px;
+  max-width: 180px;
+  height: 180px;
+  min-height: 180px;
+  max-height: 180px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 101;
+}
+
+div.loading span {
+  width: 180px;
+  min-width: 180px;
+  max-width: 180px;
+  height: 180px;
+  min-height: 180px;
+  max-height: 180px;
+  animation: spanLoading 1s infinite linear;
+  background-image: linear-gradient(0deg, #00ff6d, #1AFA96);
+  background-image: -webkit-linear-gradient(0deg, #00ff6d, #1AFA96);
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+@keyframes spanLoading {
+  0% {
+    height: 0px;
+    min-height: 0px;
+    max-height: 0px;
+    transform: rotate(0deg);
+  }
+  50% {
+    height: 180px;
+    min-height: 180px;
+    max-height: 180px;
+    transform: rotate(180deg);
+  }
+  100% {
+    height: 0px;
+    min-height: 0px;
+    max-height: 0px;
+    transform: rotate(360deg);
+  }
+}
