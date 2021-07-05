@@ -48,7 +48,7 @@ section.assinar .texto p {
 
 section.assinar .texto button {
   font-family: var(--fonte-estilo);
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(3rem, 5vw, 4rem);
   line-height: 1;
   color: var(--cor-ciano);
   border: 3px solid var(--cor-ciano);
@@ -81,4 +81,23 @@ section.assinar .imagem img {
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
+  section.assinar {
+    flex-direction: column-reverse;
+    align-items: center;
+    overflow: hidden;
+  }
+  section.assinar img.fumaca {
+    width: 1000px;
+    min-width: 1000px;
+    max-width: 1000px;
+  }
+  section.assinar .texto {
+    width: 100%;
+    padding: 80px 30px 50px 30px;
+    min-height: auto;
+  }
+  section.assinar .imagem {
+    width: 100%;
+    padding: 0 30px 0 0;
+  }
 }

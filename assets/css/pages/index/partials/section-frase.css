@@ -48,7 +48,7 @@ section.frase .texto p {
 
 section.frase .texto button {
   font-family: var(--fonte-estilo);
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(3rem, 5vw, 4rem);
   line-height: 1;
   color: var(--cor-ciano);
   border: 3px solid var(--cor-ciano);
@@ -82,4 +82,23 @@ section.frase .imagem img {
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
+  section.frase {
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+  section.frase img.fumaca {
+    width: 1000px;
+    min-width: 1000px;
+    max-width: 1000px;
+  }
+  section.frase .texto {
+    width: 100%;
+    padding: 80px 30px 50px 30px;
+    min-height: auto;
+  }
+  section.frase .imagem {
+    width: 100%;
+    padding: 0 0 0 30px;
+  }
 }

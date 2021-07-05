@@ -10,4 +10,7 @@ body {
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
+  body {
+    background-size: 1000px;
+  }
 }
